@@ -1,6 +1,3 @@
-st.set_page_config(page_title="AI Interview Roadmap Agent", page_icon="🧭", layout="centered")
-
-
 import google.generativeai as genai
 from datetime import datetime
 import json
@@ -31,7 +28,7 @@ model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 
 import streamlit as st
-
+st.set_page_config(page_title="AI Interview Roadmap Agent", page_icon="🧭", layout="centered")
 
 #<--------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -235,3 +232,4 @@ if st.button("Generate Roadmap"):
                 file_name=f"{company}_{role}_roadmap.json",
                 mime="application/json"
             )
+
