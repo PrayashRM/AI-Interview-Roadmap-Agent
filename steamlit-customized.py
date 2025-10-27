@@ -112,7 +112,7 @@ async def interview_info_scraper(company_name, role):
 
     # Step 2 – Extracting the top URLs
     links = []
-    for res in results.get("organic_results", [])[:3]:
+    for res in results.get("organic_results", [])[:1]:
         link = res.get("link")
         if link:
             links.append(link)
@@ -204,9 +204,13 @@ if st.button("Generate Roadmap"):
     if not company or not role or not job_description:
         st.error("Please fill all fields before generating.")
     else:
-        with st.spinner("Processing... please wait"):
+        with st.spinner("✅ Step 1/3: Analyzing job description..."):
             jd_info = jd_parser(company, role, job_description)
+
+        with st.spinner("⏳ Step 2/3: Searching and scraping websites... (This is the slow part!)"):
             interview_info = asyncio.run(interview_info_scraper(company, role))
+
+        with st.spinner("🧠 Step 3/3: Building your personalized roadmap..."):
             roadmap = interview_roadmap_agent(company, role, interview_info["raw_texts"])
 
             final_output = {
@@ -232,4 +236,5 @@ if st.button("Generate Roadmap"):
                 file_name=f"{company}_{role}_roadmap.json",
                 mime="application/json"
             )
+
 
