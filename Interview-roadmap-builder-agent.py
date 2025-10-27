@@ -12,8 +12,13 @@ from serpapi import GoogleSearch
 serp_api_key = os.getenv("SERP_API_KEY")
 
 #Playwright web scrapper
+import platform
 import asyncio
-asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
+#Platform aware async, as have to deploy
+if platform.system() == "Windows":
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
 from playwright.async_api import async_playwright
 
 # Configure the Gemini API key
@@ -260,4 +265,5 @@ def orchestrator(input_filename):
 
 
 input_file = input("Enter input JSON filename (inside input_data folder): ").strip()
+
 orchestrator(input_file)
