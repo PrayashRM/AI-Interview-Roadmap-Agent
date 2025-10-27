@@ -61,46 +61,46 @@ The system uses <b>Google's Gemini 2.5 Flash</b> for intelligent parsing and roa
 <p>The system follows a <b>multi-agent orchestration pattern</b> with three specialized agents:</p>
 
 <pre><code>
-                                                                          ┌─────────────────┐
-                                                                          │  User Input     │
-                                                                          │  (JSON file)    │
-                                                                          └────────┬────────┘
-                                                                                   │
-                                                                                   ▼
-                                                                  ┌─────────────────────────────────┐
-                                                                  │          Orchestrator           │
-                                                                  │  (Coordinates agent workflow)   │
-                                                                  └────────────────┬────────────────┘
-                                                                                   │
-                                                                                   ▼
-                                                                  ┌─────────────────────────────────┐
-                                                                  │  Agent 1: JD Parser             │
-                                                                  │  • Extracts technical skills    │
-                                                                  │  • Identifies tools/tech        │
-                                                                  │  • Maps responsibilities        │
-                                                                  └────────────────┬────────────────┘
-                                                                                   │
-                                                                                   ▼
-                                                                  ┌─────────────────────────────────┐
-                                                                  │  Agent 2: Info Scraper          │
-                                                                  │  • SerpAPI Google Search        │
-                                                                  │  • Playwright Web Scraping      │
-                                                                  │  • Content Extraction           │
-                                                                  └────────────────┬────────────────┘
-                                                                                   │
-                                                                                   ▼
-                                                                  ┌─────────────────────────────────┐
-                                                                  │  Agent 3: Roadmap Builder       │
-                                                                  │  • Analyzes interview patterns  │
-                                                                  │  • Structures preparation plan  │
-                                                                  │  • Generates difficulty rating  │
-                                                                  └────────────────┬────────────────┘
-                                                                                   │
-                                                                                   ▼
-                                                                  ┌─────────────────────────────────┐
-                                                                  │  JSON Output                    │
-                                                                  │  (Structured Roadmap)           │
-                                                                  └─────────────────────────────────┘
+                                                                ┌─────────────────┐
+                                                                │  User Input     │
+                                                                │  (JSON file)    │
+                                                                └────────┬────────┘
+                                                                         │
+                                                                         ▼
+                                                        ┌─────────────────────────────────┐
+                                                        │          Orchestrator           │
+                                                        │  (Coordinates agent workflow)   │
+                                                        └────────────────┬────────────────┘
+                                                                         │
+                                                                         ▼
+                                                        ┌─────────────────────────────────┐
+                                                        │  Agent 1: JD Parser             │
+                                                        │  • Extracts technical skills    │
+                                                        │  • Identifies tools/tech        │
+                                                        │  • Maps responsibilities        │
+                                                        └────────────────┬────────────────┘
+                                                                         │
+                                                                         ▼
+                                                        ┌─────────────────────────────────┐
+                                                        │  Agent 2: Info Scraper          │
+                                                        │  • SerpAPI Google Search        │
+                                                        │  • Playwright Web Scraping      │
+                                                        │  • Content Extraction           │
+                                                        └────────────────┬────────────────┘
+                                                                         │
+                                                                         ▼
+                                                        ┌─────────────────────────────────┐
+                                                        │  Agent 3: Roadmap Builder       │
+                                                        │  • Analyzes interview patterns  │
+                                                        │  • Structures preparation plan  │
+                                                        │  • Generates difficulty rating  │
+                                                        └────────────────┬────────────────┘
+                                                                         │
+                                                                         ▼
+                                                        ┌─────────────────────────────────┐
+                                                        │  JSON Output                    │
+                                                        │  (Structured Roadmap)           │
+                                                        └─────────────────────────────────┘
 </code></pre>
 
 <hr>
