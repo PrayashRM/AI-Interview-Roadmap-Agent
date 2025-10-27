@@ -120,7 +120,19 @@ async def interview_info_scraper(company_name, role):
     # Step 3 – Scraping pages using Playwright
     scraped_texts = []
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await p.chromium.launch(
+                                            headless=True,
+                                            args=[
+                                                "--no-sandbox",
+                                                "--disable-setuid-sandbox",
+                                                "--disable-dev-shm-usage",
+                                                "--disable-accelerated-2d-canvas",
+                                                "--no-first-run",
+                                                "--no-zygote",
+                                                "--single-process",
+                                                "--disable-gpu"
+                                            ]
+                                        )
         page = await browser.new_page()
         for url in links:
             try:
@@ -236,5 +248,6 @@ if st.button("Generate Roadmap"):
                 file_name=f"{company}_{role}_roadmap.json",
                 mime="application/json"
             )
+
 
 
