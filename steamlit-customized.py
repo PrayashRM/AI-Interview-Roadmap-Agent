@@ -117,32 +117,11 @@ async def interview_info_scraper(company_name, role):
         if link:
             links.append(link)
 
-    # Step 3 – Scraping pages using Playwright
-    scraped_texts = []
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(
-                                            headless=True,
-                                            args=[
-                                                "--no-sandbox",
-                                                "--disable-setuid-sandbox",
-                                                "--disable-dev-shm-usage",
-                                                "--disable-accelerated-2d-canvas",
-                                                "--no-first-run",
-                                                "--no-zygote",
-                                                "--single-process",
-                                                "--disable-gpu"
-                                            ]
-                                        )
-        page = await browser.new_page()
-        for url in links:
-            try:
-                await page.goto(url, wait_until="networkidle", timeout=30000)
-                content = await page.content()
-                scraped_texts.append(content)
-            except Exception as e:
-                print(f"Error scraping {url}: {e}")
-                continue
-        await browser.close()
+    # Step 3 – Scraping pages using Playwright (disabled for Streamlit Cloud)
+    scraped_texts = [
+        "Playwright scraping is disabled on Streamlit Cloud. Using only search result metadata."
+    ]
+
 
     return {
         "company": company_name,
@@ -248,6 +227,7 @@ if st.button("Generate Roadmap"):
                 file_name=f"{company}_{role}_roadmap.json",
                 mime="application/json"
             )
+
 
 
 
