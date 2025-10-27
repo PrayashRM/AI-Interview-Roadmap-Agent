@@ -1,0 +1,63 @@
+{
+  "company": "Amazon",
+  "role": "Software Development Engineer",
+  "jd_analysis": {
+    "raw_output": "```json\n{\n  \"company\": \"Amazon\",\n  \"role\": \"Software Development Engineer\",\n  \"technical_skills\": [\n    \"Data Structures\",\n    \"Algorithms\",\n    \"Object-Oriented Programming\",\n    \"System Design\",\n    \"Database Management\"\n  ],\n  \"tools\": [\n    \"REST APIs\",\n    \"AWS Cloud Services\"\n  ],\n  \"responsibilities\": [],\n  \"soft_skills\": [\n    \"Problem-Solving\"\n  ]\n}\n```"
+  },
+  "interview_sources": [
+    "https://www.reddit.com/r/cscareerquestionsEU/comments/1gb0tzd/amazon_graduate_sde_interview_process/",
+    "https://www.glassdoor.com/Interview/Amazon-Software-Development-Engineer-Interview-Questions-EI_IE6036.0,6_KO7,36.htm",
+    "https://www.reddit.com/r/cscareerquestionsCAD/comments/tzhyzv/how_to_prepare_for_amazon_sde_interview/"
+  ],
+  "roadmap": {
+    "company": "Amazon",
+    "role": "Software Development Engineer",
+    "rounds": [
+      {
+        "type": "Online Assessment (OA)",
+        "topics": [
+          "Data Structures & Algorithms",
+          "Behavioral (Leadership Principles)"
+        ]
+      },
+      {
+        "type": "Technical Interview 1",
+        "topics": [
+          "Data Structures & Algorithms",
+          "Problem Solving"
+        ]
+      },
+      {
+        "type": "Technical Interview 2",
+        "topics": [
+          "Data Structures & Algorithms",
+          "Problem Solving"
+        ]
+      },
+      {
+        "type": "System Design Interview",
+        "topics": [
+          "Scalability",
+          "Distributed Systems",
+          "API Design",
+          "Database Choices"
+        ]
+      },
+      {
+        "type": "Behavioral / Bar Raiser Interview",
+        "topics": [
+          "Leadership Principles",
+          "Past Project Experience",
+          "Situational Questions"
+        ]
+      }
+    ],
+    "difficulty": "Hard",
+    "recommended_order": [
+      "Amazon Leadership Principles (STAR method)",
+      "Data Structures & Algorithms (LeetCode Medium/Hard)",
+      "System Design Fundamentals (Scalability, Databases, Microservices)"
+    ]
+  },
+  "timestamp": "2025-10-27 20:04:32"
+}
