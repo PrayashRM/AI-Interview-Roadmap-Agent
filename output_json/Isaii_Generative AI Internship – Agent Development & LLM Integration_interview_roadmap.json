@@ -1,0 +1,82 @@
+{
+  "company": "Isaii",
+  "role": "Generative AI Internship - Agent Development & LLM Integration",
+  "jd_analysis": {
+    "raw_output": "```json\n{\n  \"company\": \"Isaii\",\n  \"role\": \"Generative AI Internship - Agent Development & LLM Integration\",\n  \"technical_skills\": [\n    \"Generative AI\",\n    \"Large Language Model Integration\",\n    \"Agent Development\",\n    \"Tool Usage\",\n    \"Web Search Implementation\",\n    \"JSON Output Handling\",\n    \"End-to-End Implementation\"\n  ],\n  \"tools\": [\n    \"LangChain\",\n    \"LlamaIndex\",\n    \"Gemini API\",\n    \"OpenAI API\",\n    \"Python\",\n    \"Node.js\"\n  ],\n  \"responsibilities\": [\n    \"Build generative AI agents\",\n    \"Integrate large language models\",\n    \"Perform agent development\",\n    \"Utilize specified tools (LangChain, LlamaIndex, Gemini API, OpenAI API)\",\n    \"Implement web search functionality\",\n    \"Handle JSON output\",\n    \"Conduct end-to-end implementation\"\n  ],\n  \"soft_skills\": []\n}\n```"
+  },
+  "interview_sources": [
+    "https://www.linkedin.com/posts/weareuplers_3-ai-skills-to-keep-you-relevant-activity-7374017229438402561-0XC5",
+    "https://www.linkedin.com/in/isleysep",
+    "https://www.linkedin.com/posts/harshadshah1953_having-ai-in-your-resum%C3%A9-may-ai-d-it-activity-7343852482793463809-bFWi"
+  ],
+  "roadmap": {
+    "company": "Isaii",
+    "role": "Generative AI Internship - Agent Development & LLM Integration",
+    "rounds": [
+      {
+        "type": "Initial Screening (HR/Recruiter)",
+        "topics": [
+          "Resume Deep Dive",
+          "Motivation for Role & Company",
+          "Career Aspirations",
+          "Basic Understanding of AI/Generative AI"
+        ]
+      },
+      {
+        "type": "Technical Interview 1 (Foundations)",
+        "topics": [
+          "Python Programming",
+          "Data Structures & Algorithms",
+          "Machine Learning Fundamentals",
+          "Deep Learning Basics (Neural Networks, Gradient Descent)"
+        ]
+      },
+      {
+        "type": "Technical Interview 2 (Generative AI & LLM Focus)",
+        "topics": [
+          "Large Language Model (LLM) Architectures (e.g., Transformers)",
+          "Prompt Engineering",
+          "Retrieval Augmented Generation (RAG)",
+          "LLM Fine-tuning",
+          "Natural Language Processing (NLP) Concepts",
+          "Evaluation Metrics for LLMs"
+        ]
+      },
+      {
+        "type": "Technical Interview 3 (Agent Development & Integration)",
+        "topics": [
+          "AI Agent Concepts (Memory, Planning, Tool Use)",
+          "Multi-Agent Systems",
+          "LLM API Integration",
+          "System Design (for Gen AI applications)",
+          "Project Discussion (past relevant projects in Gen AI/LLMs)"
+        ]
+      },
+      {
+        "type": "Behavioral & Cultural Fit",
+        "topics": [
+          "Problem-Solving Scenarios",
+          "Teamwork & Collaboration",
+          "Learning Agility",
+          "Communication Skills",
+          "Handling Challenges"
+        ]
+      }
+    ],
+    "difficulty": "Hard",
+    "recommended_order": [
+      "Python Programming",
+      "Data Structures & Algorithms",
+      "Machine Learning Fundamentals",
+      "Deep Learning Concepts",
+      "LLM Architectures & Theory",
+      "Prompt Engineering & RAG",
+      "LLM Fine-tuning & Evaluation",
+      "AI Agent Concepts & Frameworks",
+      "System Design for Gen AI",
+      "Project Experience & Application",
+      "Behavioral & Cultural Fit"
+    ]
+  },
+  "timestamp": "2025-10-27 20:20:06"
+}
